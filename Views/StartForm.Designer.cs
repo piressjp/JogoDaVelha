@@ -62,7 +62,6 @@
             this.labelTitle.Size = new System.Drawing.Size(271, 44);
             this.labelTitle.TabIndex = 1;
             this.labelTitle.Text = "Jogo da Velha";
-            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
             // StartForm
             // 
