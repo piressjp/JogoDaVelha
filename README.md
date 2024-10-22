@@ -11,7 +11,7 @@ Este é um projeto de **Jogo da Velha** desenvolvido em **C#** utilizando o **Wi
 
 ## Estrutura do Projeto
 
-O projeto foi estruturado utilizando o padrão **MVP (Model-View-Presenter)**, separando a lógica do jogo (model) da interface gráfica (view) e dos controladores de interação (presenters). Isso facilita a manutenção, teste e escalabilidade do projeto.
+O projeto foi estruturado utilizando o padrão [MVP (Model-View-Presenter)](https://www.devmedia.com.br/o-padrao-mvp-model-view-presenter/3043), separando a lógica do jogo (model) da interface gráfica (view) e dos controladores de interação (presenters). Isso facilita a manutenção, teste e escalabilidade do projeto.
 
 ## Componentes do Projeto
 ### Models:
@@ -20,24 +20,24 @@ O projeto foi estruturado utilizando o padrão **MVP (Model-View-Presenter)**, s
 
 ### Views:
 
-- IGameView.cs: Interface para a view do jogo (GameForm), que define os métodos necessários para atualizar a interface.
-- IStartView.cs: Interface para a view inicial (StartForm), que define como a navegação para o jogo deve ocorrer.
-- GameForm.cs: Implementação da interface gráfica do jogo (o tabuleiro de 3x3, status de jogo, etc.).
+- IGameView.cs: Interface para a view GameForm, que define os métodos necessários para atualizar a interface.
+- IStartView.cs: Interface para a view StartForm, que define como a navegação para o jogo deve ocorrer.
+- GameForm.cs: Implementação da interface gráfica do jogo.
 - StartForm.cs: Implementação da tela inicial com opções para selecionar o modo de jogo.
 
 ### Presenters:
 
-- GamePresenter.cs: Contém a lógica que conecta o GameModel à GameView, manipulando as jogadas do jogador, a máquina e verificando o resultado da partida.
-- StartPresenter.cs: Controla a navegação entre a tela inicial e a tela do jogo, gerenciando os modos de jogo.
+- GamePresenter.cs: Contém a lógica que conecta o GameModel a GameView.
+- StartPresenter.cs: Controla a navegação entre a tela inicial e a tela do jogo.
 
 ## Executar o Projeto
 
 ### Pré-requisitos
 
-- .NET SDK 6.0
-- Um editor compatível com .NET, como o Visual Studio ou Visual Studio Code com suporte ao C#.
+- [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- Um editor compatível com .NET, como o [Visual Studio](https://visualstudio.microsoft.com/) ou [Visual Studio Code](https://code.visualstudio.com/) com suporte ao C#.
 
-### Passos para execução
+### Passo a passo
 
 1. Clone este repositório para sua máquina local:
 
@@ -46,12 +46,7 @@ https://github.com/piressjp/JogoDaVelha.git
 ```
 2. Abra o projeto no Visual Studio ou no editor de sua preferência.
 
-3. Restaure os pacotes NuGet (se necessário):
-
-```bash
-dotnet restore
-```
-4. Compile e execute o projeto:
+3. Execute o projeto:
 
 ```bash
 dotnet run
@@ -59,9 +54,9 @@ dotnet run
 
 ## Melhorias Futuras
 
-- IA Melhorada: Atualmente, a máquina faz movimentos aleatórios. Uma possível melhoria seria implementar uma IA mais inteligente, como o algoritmo Minimax.
+- IA Melhorada: Atualmente, a máquina faz movimentos aleatórios. Uma possível melhoria seria implementar uma IA.
 - Testes Unitários: Adicionar testes unitários para garantir a integridade das regras do jogo.
-- Design: Melhorar a interface gráfica para torná-la mais atraente e intuitiva.
+- Design: Melhorar a interface gráfica.
 
 ## Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request ou reportar Issues.
