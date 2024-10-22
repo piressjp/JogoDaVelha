@@ -57,11 +57,11 @@ dotnet restore
 dotnet run
 ```
 
-## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request ou reportar Issues.
-
 ## Melhorias Futuras
 
 - IA Melhorada: Atualmente, a máquina faz movimentos aleatórios. Uma possível melhoria seria implementar uma IA mais inteligente, como o algoritmo Minimax.
 - Testes Unitários: Adicionar testes unitários para garantir a integridade das regras do jogo.
 - Design: Melhorar a interface gráfica para torná-la mais atraente e intuitiva.
+
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request ou reportar Issues.
