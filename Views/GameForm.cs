@@ -35,6 +35,7 @@ namespace JogoDaVelha
                 button.Click += new EventHandler(Button_Click);
             }
 
+
             EnableRestartAndMenuButtons(true);
         }
 
@@ -82,12 +83,13 @@ namespace JogoDaVelha
 
         private void buttonRestart_Click(object sender, EventArgs e)
         {
+            labelStatus.Text = "";
             _presenter.RestartGame();
         }
 
         public void EnableRestartAndMenuButtons(bool enable)
         {
-            if(enable)
+            if (enable)
             {
                 buttonRestart.Hide();
                 button10.Hide();
