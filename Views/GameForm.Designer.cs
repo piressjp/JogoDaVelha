@@ -52,7 +52,7 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(125, 24);
+            button1.Location = new Point(122, 80);
             button1.Name = "button1";
             button1.Size = new Size(112, 64);
             button1.TabIndex = 0;
@@ -64,7 +64,7 @@
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.Location = new Point(251, 24);
+            button2.Location = new Point(248, 80);
             button2.Name = "button2";
             button2.Size = new Size(136, 64);
             button2.TabIndex = 1;
@@ -76,7 +76,7 @@
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(401, 24);
+            button3.Location = new Point(398, 80);
             button3.Name = "button3";
             button3.Size = new Size(142, 64);
             button3.TabIndex = 2;
@@ -88,7 +88,7 @@
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(125, 96);
+            button4.Location = new Point(122, 152);
             button4.Name = "button4";
             button4.Size = new Size(112, 69);
             button4.TabIndex = 3;
@@ -100,7 +100,7 @@
             button5.FlatAppearance.BorderSize = 0;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button5.Location = new Point(251, 96);
+            button5.Location = new Point(248, 152);
             button5.Name = "button5";
             button5.Size = new Size(136, 69);
             button5.TabIndex = 4;
@@ -112,7 +112,7 @@
             button6.FlatAppearance.BorderSize = 0;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button6.Location = new Point(399, 96);
+            button6.Location = new Point(396, 152);
             button6.Name = "button6";
             button6.Size = new Size(144, 69);
             button6.TabIndex = 5;
@@ -124,7 +124,7 @@
             button7.FlatAppearance.BorderSize = 0;
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(125, 176);
+            button7.Location = new Point(122, 232);
             button7.Name = "button7";
             button7.Size = new Size(112, 67);
             button7.TabIndex = 6;
@@ -136,7 +136,7 @@
             button8.FlatAppearance.BorderSize = 0;
             button8.FlatStyle = FlatStyle.Flat;
             button8.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button8.Location = new Point(251, 176);
+            button8.Location = new Point(248, 232);
             button8.Name = "button8";
             button8.Size = new Size(136, 67);
             button8.TabIndex = 7;
@@ -148,7 +148,7 @@
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
             button9.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.Location = new Point(401, 176);
+            button9.Location = new Point(398, 232);
             button9.Name = "button9";
             button9.Size = new Size(142, 67);
             button9.TabIndex = 8;
@@ -158,10 +158,11 @@
             // 
             labelStatus.AutoSize = true;
             labelStatus.Font = new Font("Arial", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            labelStatus.Location = new Point(238, 274);
+            labelStatus.Location = new Point(214, 21);
             labelStatus.Name = "labelStatus";
             labelStatus.Size = new Size(0, 29);
             labelStatus.TabIndex = 9;
+            labelStatus.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // buttonRestart
             // 
@@ -177,7 +178,7 @@
             // labelH1
             // 
             labelH1.BorderStyle = BorderStyle.FixedSingle;
-            labelH1.Location = new Point(125, 91);
+            labelH1.Location = new Point(122, 147);
             labelH1.Name = "labelH1";
             labelH1.Size = new Size(418, 2);
             labelH1.TabIndex = 11;
@@ -185,7 +186,7 @@
             // labelH2
             // 
             labelH2.BorderStyle = BorderStyle.FixedSingle;
-            labelH2.Location = new Point(125, 171);
+            labelH2.Location = new Point(122, 227);
             labelH2.Name = "labelH2";
             labelH2.Size = new Size(418, 2);
             labelH2.TabIndex = 12;
@@ -193,7 +194,7 @@
             // labelV1
             // 
             labelV1.BorderStyle = BorderStyle.FixedSingle;
-            labelV1.Location = new Point(243, 24);
+            labelV1.Location = new Point(240, 80);
             labelV1.Name = "labelV1";
             labelV1.Size = new Size(2, 224);
             labelV1.TabIndex = 13;
@@ -201,7 +202,7 @@
             // labelV2
             // 
             labelV2.BorderStyle = BorderStyle.FixedSingle;
-            labelV2.Location = new Point(393, 24);
+            labelV2.Location = new Point(390, 80);
             labelV2.Name = "labelV2";
             labelV2.Size = new Size(2, 224);
             labelV2.TabIndex = 14;
