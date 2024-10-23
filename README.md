@@ -54,7 +54,7 @@ dotnet run
 
 ## Melhorias Futuras
 
-- IA Melhorada: Atualmente, a máquina faz movimentos aleatórios. Uma possível melhoria seria implementar uma IA.
+- IA Melhorada: Atualmente, a máquina faz movimentos aleatórios. Uma possível melhoria seria implementar uma IA para poder aumentar nível de dificuldade do jogo.
 - Testes Unitários: Adicionar testes unitários para garantir a integridade das regras do jogo.
 - Design: Melhorar a interface gráfica.
 
