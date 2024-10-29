@@ -13,7 +13,7 @@ namespace src.Presenters
 
         public void StartGame(bool vsMachine)
         {
-            _view.ShowGame(vsMachine);
+            _view.ShowGame(vsMachine); // Abre o jogo
         }
     }
 }

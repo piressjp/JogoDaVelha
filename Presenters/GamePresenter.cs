@@ -16,19 +16,19 @@ namespace JogoDaVelha.Presenters
 
         public void PlayerMove(int row, int column)
         {
-            if (_model.MakeMove(row, column))
+            if (_model.MakeMove(row, column))  // Verifica se o movimento é valido ou não
             {
-                _view.UpdateBoard(row, column, _model.PlayerTurn ? "O" : "X");
+                _view.UpdateBoard(row, column, _model.PlayerTurn ? "O" : "X"); // Atualiza o tabuleiro com o valor O ou X, dependendo de quem é a jogada
 
                 string result = _model.CheckForWinner();
-                if (!string.IsNullOrEmpty(result))
+                if (!string.IsNullOrEmpty(result)) // Verifica se houve vencedor
                 {
-                    _view.EnableRestartAndMenuButtons(false);
+                    _view.EnableRestartAndMenuButtons(false); // Habilita os botões
                     _view.DisplayWinner(result == "Draw" ? "Empate!" : $"Jogador {result} venceu!");
                 }
-                else if (_model.VsMachine && !_model.PlayerTurn)
+                else if (_model.VsMachine && !_model.PlayerTurn) // Verifica se é vez da máquina
                 {
-                    MachineMove().GetAwaiter();
+                    MachineMove().GetAwaiter(); // Jogada da maquina
                 }
             }
         }
@@ -36,14 +36,14 @@ namespace JogoDaVelha.Presenters
         private async Task MachineMove()
         {
             await Task.Delay(1000);
-            var (row, column) = _model.GetRandomMove();
+            var (row, column) = _model.GetRandomMove(); // Gera um movimento aleatório
             PlayerMove(row, column); // Executa a jogada da máquina
         }
 
         public void RestartGame()
         {
-            _model.InitializeGame();
-            _view.ResetBoard();
+            _model.InitializeGame(); // Reinicializa tudo do jogo
+            _view.ResetBoard(); // Reseta o tabuleiro
         }
     }
 }
